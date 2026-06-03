@@ -9,7 +9,7 @@ export const overridesPreferences = defineOverridesPreferences({
   // overrides
   app: {
     colorGrayMode: false,
-    defaultHomePath: '/guide/structure',
+    defaultHomePath: '/analytics',
     name: import.meta.env.VITE_APP_TITLE,
   },
   theme: {
