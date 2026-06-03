@@ -248,14 +248,14 @@ const tabs = computed((): SegmentedItem[] => {
       label: $t('preferences.layout'),
       value: 'layout',
     },
-    {
-      label: $t('preferences.shortcutKeys.title'),
-      value: 'shortcutKey',
-    },
-    {
-      label: $t('preferences.general'),
-      value: 'general',
-    },
+    // {
+    //   label: $t('preferences.shortcutKeys.title'),
+    //   value: 'shortcutKey',
+    // },
+    // {
+    //   label: $t('preferences.general'),
+    //   value: 'general',
+    // },
   ];
 
   if (showCustomTab.value) {
@@ -394,9 +394,9 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
                 :is-dark="isDark"
               />
             </Block>
-            <Block :title="$t('preferences.theme.radius')">
+            <!-- <Block :title="$t('preferences.theme.radius')">
               <Radius v-model="themeRadius" />
-            </Block>
+            </Block> -->
             <Block :title="$t('preferences.theme.fontSize')">
               <FontSize v-model="themeFontSize" />
             </Block>
@@ -411,9 +411,9 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
             <Block :title="$t('preferences.layout')">
               <Layout v-model="appLayout" />
             </Block>
-            <Block :title="$t('preferences.content')">
+            <!-- <Block :title="$t('preferences.content')">
               <Content v-model="appContentCompact" />
-            </Block>
+            </Block> -->
 
             <Block :title="$t('preferences.sidebar.title')">
               <Sidebar
@@ -450,7 +450,7 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
               />
             </Block>
 
-            <Block :title="$t('preferences.breadcrumb.title')">
+            <!-- <Block :title="$t('preferences.breadcrumb.title')">
               <Breadcrumb
                 v-model:breadcrumb-enable="breadcrumbEnable"
                 v-model:breadcrumb-hide-only-one="breadcrumbHideOnlyOne"
@@ -477,7 +477,7 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
                 v-model:tabbar-max-count="tabbarMaxCount"
                 v-model:tabbar-middle-click-to-close="tabbarMiddleClickToClose"
               />
-            </Block>
+            </Block> -->
             <Block :title="$t('preferences.widget.title')">
               <Widget
                 v-model:app-preferences-button-position="
@@ -494,7 +494,7 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
                 v-model:widget-timezone="widgetTimezone"
               />
             </Block>
-            <Block :title="$t('preferences.footer.title')">
+            <!-- <Block :title="$t('preferences.footer.title')">
               <Footer
                 v-model:footer-enable="footerEnable"
                 v-model:footer-fixed="footerFixed"
@@ -513,7 +513,7 @@ function handleCustomPreferencesUpdate(updates: CustomPreferencesRecord) {
                 v-model:copyright-icp-link="copyrightIcpLink"
                 :disabled="!footerEnable"
               />
-            </Block>
+            </Block> -->
           </template>
 
           <template #shortcutKey>

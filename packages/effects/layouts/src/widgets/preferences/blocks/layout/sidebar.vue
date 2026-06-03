@@ -49,9 +49,9 @@ const handleCheckboxChange = () => {
   <SwitchItem v-model="sidebarEnable" :disabled="disabled">
     {{ $t('preferences.sidebar.visible') }}
   </SwitchItem>
-  <SwitchItem v-model="sidebarDraggable" :disabled="!sidebarEnable || disabled">
+  <!-- <SwitchItem v-model="sidebarDraggable" :disabled="!sidebarEnable || disabled">
     {{ $t('preferences.sidebar.draggable') }}
-  </SwitchItem>
+  </SwitchItem> -->
   <SwitchItem v-model="sidebarCollapsed" :disabled="!sidebarEnable || disabled">
     {{ $t('preferences.sidebar.collapsed') }}
   </SwitchItem>
@@ -68,7 +68,7 @@ const handleCheckboxChange = () => {
   >
     {{ $t('preferences.sidebar.collapsedShowTitle') }}
   </SwitchItem>
-  <SwitchItem
+  <!-- <SwitchItem
     v-model="sidebarAutoActivateChild"
     :disabled="
       !sidebarEnable ||
@@ -100,5 +100,5 @@ const handleCheckboxChange = () => {
     :step="10"
   >
     {{ $t('preferences.sidebar.width') }}
-  </NumberFieldItem>
+  </NumberFieldItem> -->
 </template>

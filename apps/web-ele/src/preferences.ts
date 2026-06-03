@@ -8,6 +8,17 @@ import { defineOverridesPreferences } from '@vben/preferences';
 export const overridesPreferences = defineOverridesPreferences({
   // overrides
   app: {
+    colorGrayMode: false,
+    defaultHomePath: '/guide/structure',
     name: import.meta.env.VITE_APP_TITLE,
+  },
+  theme: {
+    mode: 'light',
+    radius: '0.25',
+  },
+  widget: {
+    languageToggle: false,
+    lockScreen: false,
+    timezone: false,
   },
 });
